@@ -1,0 +1,163 @@
+/* WeekLayout.css */
+.week-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.week-header {
+  text-align: center;
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.week-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.week-subtitle {
+  font-size: 1.25rem;
+  color: #666;
+  font-weight: 400;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.week-content h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-top: 60px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.week-content h2::before {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 32px;
+  background: linear-gradient(to bottom, #646cff, #9096ff);
+  border-radius: 4px;
+}
+
+.week-content h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #34495e;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.week-content p {
+  font-size: 1.1rem;
+  color: #4a5568;
+  margin-bottom: 24px;
+}
+
+.week-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+}
+
+.week-content li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+  color: #4a5568;
+}
+
+.week-content li::before {
+  content: '•';
+  position: absolute;
+  left: 8px;
+  color: #646cff;
+  font-weight: bold;
+}
+
+.week-card {
+  background: #f8f9fa;
+  border-radius: 16px;
+  padding: 32px;
+  margin: 32px 0;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.week-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.week-image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin: 40px 0;
+}
+
+.week-image {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.week-image:hover {
+  transform: scale(1.02);
+}
+
+.week-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(0,0,0,0.1), transparent);
+  margin: 60px 0;
+  border: none;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .week-container {
+    color: #e2e8f0;
+  }
+  
+  .week-title {
+    color: #f7fafc;
+  }
+  
+  .week-subtitle {
+    color: #a0aec0;
+  }
+  
+  .week-content h2 {
+    color: #edf2f7;
+  }
+  
+  .week-content h3 {
+    color: #e2e8f0;
+  }
+  
+  .week-content p, .week-content li {
+    color: #cbd5e0;
+  }
+  
+  .week-card {
+    background: #2d3748;
+    border-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .week-header {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+  }
+}

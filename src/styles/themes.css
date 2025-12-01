@@ -1,0 +1,63 @@
+/* Tema claro - Crema futurista */
+[data-theme="light"] {
+  --bg-primary: #faf8f3;
+  --bg-secondary: #f5f2eb;
+  --bg-accent: #ede8df;
+  --text-primary: #2c2c2c;
+  --text-secondary: #5a5a5a;
+  --border-color: #d4cfc4;
+  --shadow: rgba(44, 44, 44, 0.1);
+  --nav-bg: rgba(245, 242, 235, 0.9);
+  --nav-item-bg: rgba(255, 255, 255, 0.7);
+  --nav-item-active: #ffffff;
+}
+
+/* Tema oscuro - Cyberpunk */
+[data-theme="dark"] {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #1a1a1a;
+  --bg-accent: #2a2a2a;
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --border-color: #404040;
+  --shadow: rgba(138, 43, 226, 0.3);
+  --nav-bg: rgba(26, 26, 26, 0.9);
+  --nav-item-bg: rgba(138, 43, 226, 0.2);
+  --nav-item-active: rgba(138, 43, 226, 0.4);
+  --accent-purple: #8a2be2;
+  --accent-cyan: #00ffff;
+}
+
+/* Aplicar variables globalmente */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilos para elementos comunes */
+hr {
+  border-color: var(--border-color) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+}
+
+p, li {
+  color: var(--text-secondary);
+}
+
+/* Tema oscuro - efectos cyberpunk */
+[data-theme="dark"] h1 {
+  text-shadow: 0 0 10px var(--accent-purple);
+}
+
+[data-theme="dark"] strong {
+  color: var(--accent-cyan);
+}
+
+[data-theme="dark"] .gallery-image-container {
+  box-shadow: 0 8px 25px var(--shadow) !important;
+  border: 1px solid var(--accent-purple);
+}
