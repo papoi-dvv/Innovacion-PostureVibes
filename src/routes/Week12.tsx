@@ -28,13 +28,13 @@ export default function Week12() {
 
       <div className="week-image-grid">
         <img
-          src="/Innovacion-PostureVibes/images/exposicion/Expo1.jpg"
-          alt="Exposición 1"
+          src="/Innovacion-PostureVibes/images/models/PreProducto.jpg"
+          alt="Pre-producto"
           className="week-image"
         />
         <img
-          src="/Innovacion-PostureVibes/images/exposicion/Expo2.jpg"
-          alt="Exposición 2"
+          src="/Innovacion-PostureVibes/images/models/ImpresionF.jpg"
+          alt="Producto final"
           className="week-image"
         />
       </div>
