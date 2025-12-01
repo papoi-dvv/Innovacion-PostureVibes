@@ -10,6 +10,7 @@ import Week8 from "./routes/Week8";
 import Week9 from "./routes/Week9";
 import Week10 from "./routes/Week10";
 import Week12 from "./routes/Week12";
+import Week14 from "./routes/Week14";
 
 export default function App() {
   return (
@@ -25,7 +26,8 @@ export default function App() {
           { label: 'Semana 8', href: '/week8' },
           { label: 'Semana 9', href: '/week9' },
           { label: 'Semana 10', href: '/week10' },
-          { label: 'Semana 12', href: '/week12' }
+          { label: 'Semana 12', href: '/week12' },
+          { label: 'Semana 14', href: '/week14' }
         ]}
       />
 
@@ -40,6 +42,7 @@ export default function App() {
           <Route path="/week9" element={<Week9 />} />
           <Route path="/week10" element={<Week10 />} />
           <Route path="/week12" element={<Week12 />} />
+          <Route path="/week14" element={<Week14 />} />
         </Routes>
       </div>
     </>
